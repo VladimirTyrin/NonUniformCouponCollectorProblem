@@ -39,8 +39,8 @@ public static class Runner
     private static int RunToCompletion(int n, IndexPicker picker)
     {
         var pooledArray = ArrayPool<int>.Shared.Rent(n);
-        Array.Fill(pooledArray, 0);
         var values = pooledArray.AsSpan().Slice(0, n);
+        values.Clear();
         var count = 0;
         while (! values.AreAllPositive())
         {
