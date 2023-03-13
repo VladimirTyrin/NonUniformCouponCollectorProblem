@@ -1,3 +1,5 @@
+namespace NonUniformCouponCollectorProblem;
+
 public class IndexPicker
 {
     private readonly Random _random;

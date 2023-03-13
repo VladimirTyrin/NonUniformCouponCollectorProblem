@@ -1,5 +1,7 @@
 using System.Buffers;
 
+namespace NonUniformCouponCollectorProblem;
+
 public static class Runner
 {
     public static double GetExpectation(int n, int runCount, int threadCount, double[] weights)
@@ -26,7 +28,7 @@ public static class Runner
         return sum * 1.0 / threadCount / runCountPerThread;
     }
 
-    static void ThreadProc(object? o)
+    private static void ThreadProc(object? o)
     {
         var context = (ThreadContext)o!;
 

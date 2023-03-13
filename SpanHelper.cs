@@ -1,5 +1,7 @@
 using System.Numerics;
 
+namespace NonUniformCouponCollectorProblem;
+
 public static class SpanHelper
 {
     public static bool AreAllPositive(this Span<int> span)

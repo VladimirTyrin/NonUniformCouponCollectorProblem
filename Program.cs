@@ -1,4 +1,5 @@
 ﻿using System.Diagnostics;
+using NonUniformCouponCollectorProblem;
 
 const int runCount = 50000;
 const int n = 1000;
